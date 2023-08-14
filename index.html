@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="titleLogo.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <title>My OTT</title>
+    <style>
+      body{
+        background-color: black;
+      }
+      nav {
+        height: 70px;
+        width: 100%;
+        /* background-color: rgb(0, 0, 0); */
+        background: rgb(226, 226, 226,0.4);
+        backdrop-filter: blur(8px);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+      }
+      .nav-logo img {
+        height: 60px;
+        width: 180px;
+        margin: 6px 0px 7px 5px;
+      }
+      nav .nav-items {
+        margin-top: 10px;
+        position: absolute;
+        right: 20px;
+      }
+      .nav-items a {
+        text-decoration: none;
+        font-size: 25px;
+        padding: 15px 5px;
+        color:aqua;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 400;
+      }
+      .nav-items ul li {
+        display: inline;
+      }
+      .nav-items:hover a {
+        filter: blur(2px);
+      }
+      .nav-items a:hover {
+        color: black;
+        filter: blur(0px);
+      }
+      .carousel-inner img{
+        height: 550px;
+        width: 90%;
+      }
+      .carousel-inner{
+        width: 89%;
+        margin: 10px 0px 0px 140px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        left: 100px;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        right: 100px;
+      }
+      h2{
+        color: grey;
+        display: inline;
+      }
+      h2:hover{
+        color: whitesmoke;
+      }
+      .frequent-image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .frequent-image img{
+        margin: 5px;
+      }
+      .frequent-image img:hover{
+        transform: translateY(-5px);
+        scale: 1.2;
+        filter: drop-shadow(10px);
+        transition: all .5s ease-in-out;
+        border-radius: 10px;
+        
+      }
+      #carouselExampleAutoplaying{
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <img src="navLogo.png" alt="" />
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="#carouselExampleAutoplaying">Home</a></li>
+          <li><a href="#freq">Frequently Watched</a></li>
+          <li><a href="">Recent</a></li>
+          <li><a href="">Top rated</a></li>
+          <li><a href="">Favourite</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">SignUp/SingIn</a></li>
+        </ul>
+      </div>
+      <div class="nav-items"></div>
+    </nav>
+
+    <!-- Home section start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="homeImg1.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Img2.webp" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Img3.webp" class="d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Home section end -->
+
+    <!-- Frequent section start -->
+      <div class="frequent" id="freq">
+        <h2>Frequently watched</h2>
+        <div class="frequent-image">
+          <img src="freq-img1.webp" alt="">
+          <img src="freq-img2.webp" alt="">
+          <img src="freq-img3.webp" alt="">
+          <img src="freq-img5.webp" alt="">
+          <img src="freq-img7.webp" alt="">
+          <img src="freq-img3.webp" alt="">
+          <img src="freq-img3.webp" alt="">
+          <img src="freq-img7.webp" alt="">
+          <img src="freq-img5.webp" alt="">
+          <img src="freq-img3.webp" alt="">
+          
+        </div>
+      </div>
+    <!-- Frequent section end -->
+
+  </body>
+</html>
